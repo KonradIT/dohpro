@@ -3,7 +3,7 @@ Get-ChildItem -Filter GH*.MP4 |
 Get-ChildItem -Filter GX*.MP4 |
     Rename-Item -NewName { $_.Name -replace 'GX(\d{2})(\d{4})', 'GoProX-$2-$1' }
 Get-ChildItem -Filter GL*.LRV |
-    Rename-Item -NewName { $_.Name -replace 'GX(\d{2})(\d{4})', 'GoProL-$2-$1' }
+    Rename-Item -NewName { $_.Name -replace 'GL(\d{2})(\d{4})', 'GoProL-$2-$1' }
 
 del *.THM
 
